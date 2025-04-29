@@ -13,17 +13,17 @@ This project demonstrates a complete end-to-end data pipeline for ingesting, tra
 
 
 
-## 🧠 Project Overview
+## Project Overview
 
 This project showcases how to build a scalable big data analytics solution using Azure services. It ingests trip data from the NYC Taxi open dataset, processes it with Apache Spark on Azure Databricks, stores it efficiently with Parquet and Delta Lake formats, and visualizes insights using Power BI.
 
 
-## 🏗️ Architecture
+## Architecture
 
 ![Image](https://github.com/user-attachments/assets/eb6176c6-a50c-42f4-962d-a7736744d7d9)
 
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - **Data Ingestion:** Azure Data Factory
 - **Data Transformation:** Azure Databricks (Apache Spark)
@@ -32,14 +32,14 @@ This project showcases how to build a scalable big data analytics solution using
 - **Security:** Access Keys for secure Blob access
 
 
-## 📊 Data Source
+## Data Source
 
 We use the publicly available **NYC Taxi Trip Records** provided by the New York City Taxi & Limousine Commission (TLC).
 
 🔗 [NYC Taxi Trip Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
 
 
-## 🔄 Data Pipeline Stages
+## Data Pipeline Stages
 
 1. **Ingestion:**  
    Azure Data Factory pulls data from NYC TLC API into Azure Blob Storage (Raw Layer) in Parquet format.
@@ -54,7 +54,7 @@ We use the publicly available **NYC Taxi Trip Records** provided by the New York
    Power BI connects directly to Delta Lake to create meaningful, real-time dashboards.
 
 
-## 📈 Final Dashboard
+## Final Dashboard
 ![Image](https://github.com/user-attachments/assets/9bc31d73-5206-4fe4-8eda-6c8d546b7adc)
 
 This NYC Taxi dashboard summarizes 2023 trip data, highlighting key metrics like total rides (787K), revenue ($18.78M), and average trip distance (19.02 miles). It shows that **Vendor 2 dominates** trip volume, **Thursdays see the most rides**, and **revenue peaks in March and September**. A map visualizes pickup hotspots, mostly in North America. The dashboard offers clear insights into vendor performance, daily trends, and monthly revenue patterns.
